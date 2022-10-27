@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <title>Lab2</title>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <fieldset style="text-align: left; padding: 5px 10px">
+            <!--<legend>Order Form</legend>-->
+            <div style="width: 100%">
+                <label style="color: orange">Order Form</label><br >
+                <fieldset style="text-align: left; padding: 5px 10px">
+                    <legend>Basic Information</legend>
+                    <table>
+                        <tr>
+                            <td style="text-align: left">Name:</td>
+                            <td style="text-align: left">
+                                <input type="text" id="Name" name="Name" value="Jun" maxlength="30" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td style="text-align: left">
+                                <input type="text" id="Email" name="Email" value=""
+                                    placeholder="wan00036@algonquinlive.com" >
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: left">Address:</td>
+                            <td style="text-align: left">
+                                <textarea rows="5" cols="50" name="Address" id="Address"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: left">PostCode:</td>
+                            <td style="text-align: left">
+                                <input type="text" id="PostCode" name="PostCode" value="" >
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+
+            <div style="margin-top: 20px; width: 70%">
+                <fieldset>
+                    <legend>Product Information</legend>
+                    <table style="border: 1px solid black; width: 70%">
+                        <tr>
+                            <th style="
+                    border: 1px solid black;
+                    font-size: 12px;
+                    text-align: center;
+                  ">
+                                Product
+                            </th>
+                            <th style="
+                    border: 1px solid black;
+                    font-size: 12px;
+                    text-align: center;
+                  ">
+                                Part Number
+                            </th>
+                            <th style="
+                    border: 1px solid black;
+                    font-size: 12px;
+                    text-align: center;
+                  ">
+                                Quantity
+                            </th>
+                            <th style="
+                    border: 1px solid black;
+                    font-size: 12px;
+                    text-align: center;
+                  ">
+                                Unit Price
+                            </th>
+                            <th style="
+                    border: 1px solid black;
+                    font-size: 12px;
+                    text-align: center;
+                  ">
+                                Subtotal
+                            </th>
+                        </tr>
+                        <tr style="border: 1px solid black; text-align: left">
+                            <td style="border: 1px solid black">Box</td>
+                            <td style="border: 1px solid black; text-align: left">AC100</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                            <td style="border: 1px solid black; text-align: left">$5</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                        </tr>
+                        <tr style="border: 1px solid black; text-align: left">
+                            <td style="border: 1px solid black">Coffe Table</td>
+                            <td style="border: 1px solid black; text-align: left">AC200</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                            <td style="border: 1px solid black; text-align: left">$100</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                        </tr>
+
+                        <tr style="border: 1px solid black; text-align: left">
+                            <td style="border: 1px solid black">Chair</td>
+                            <td style="border: 1px solid black; text-align: left">AC300</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                            <td style="border: 1px solid black; text-align: left">$150</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                        </tr>
+                        <tr style="border: 1px solid black; text-align: left">
+                            <td style="border: 1px solid black">Desk</td>
+                            <td style="border: 1px solid black; text-align: left">AC400</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                            <td style="border: 1px solid black; text-align: left">$120</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                        </tr>
+
+                        <tr style="border: 1px solid black; text-align: left">
+                            <td style="border: 1px solid black">Cormosite Table</td>
+                            <td style="border: 1px solid black; text-align: left">AC500</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                            <td style="border: 1px solid black; text-align: left">$130</td>
+                            <td style="border: 1px solid black; text-align: left"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="border: 1px solid black; text-align: right"></td>
+
+                            <td style="border: 1px solid black; text-align: right">
+                                Total:
+                            </td>
+                            <td style="border: 1px solid black; text-align: right"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+
+            <h3>Credit Card Information</h3>
+
+            <table style="width: 35%; border-collapse: separate; border-spacing: 0em 1em">
+                <tr>
+                    <td>Card Type</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left">
+                        <label><input type="radio" id="Mastercard" name="Mastercard"
+                                value="Mastercard" >Mastercard</label>
+                    </td>
+                    <td> <label for="CardNumber">Card Number:</label></td>
+                    <td>
+                        <input type="text" id="CardNumber" name="CardNumber" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label><input type="radio" id="Visa" name="Visa" value="Visa" >Visa</label>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label><input type="radio" id="GiftCard" name="Gift Card" value="Gift Card" >Gift Card</label>
+                    </td>
+                    <td>Expiry date:</td>
+                    <td>
+                         
+                        <label for="ExpiryDate">
+                            <input type="date" id="ExpiryDate" name="ExpiryDate" style="width: 50%" ></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="textarea" style="vertical-align: middle; font-weight: bold">Delivery Address:
+                        </label>
+                    </td>
+                    <td colspan="2">
+                        <textarea id="textarea" rows="6" cols="25" style="width: 70%; height: 100px">
+              </textarea>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" value="Submit" id="submit" name="submit">
+                Send Order
+            </button>
+            <button type="reset" value="ClearForm" id="reset" name="reset">
+                Clear Form
+            </button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<style>
+fieldset {
+  background-color: ;
+  text-align: left;
+}
+
+legend {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
